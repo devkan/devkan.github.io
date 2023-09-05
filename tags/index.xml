@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 프리랜서의 개발일지</title>
+    <title>Tags on Senior Developer&#39;s Blog</title>
     <link>https://devkan.github.io/tags/</link>
-    <description>Recent content in Tags on 프리랜서의 개발일지</description>
+    <description>Recent content in Tags on Senior Developer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko</language><atom:link href="https://devkan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko</language>
+    <lastBuildDate>Tue, 05 Sep 2023 15:14:52 +0900</lastBuildDate><atom:link href="https://devkan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>https://devkan.github.io/tags/intro/</link>
+      <pubDate>Tue, 05 Sep 2023 15:14:52 +0900</pubDate>
+      
+      <guid>https://devkan.github.io/tags/intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Main</title>
+      <link>https://devkan.github.io/tags/main/</link>
+      <pubDate>Tue, 05 Sep 2023 15:14:52 +0900</pubDate>
+      
+      <guid>https://devkan.github.io/tags/main/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Senior Developer&#39;s Blog</title>
-    <link>https://devkan.github.io/post/</link>
-    <description>Recent content in Posts on Senior Developer&#39;s Blog</description>
+    <title>Main on Senior Developer&#39;s Blog</title>
+    <link>https://devkan.github.io/categories/main/</link>
+    <description>Recent content in Main on Senior Developer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 05 Sep 2023 15:14:52 +0900</lastBuildDate><atom:link href="https://devkan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Sep 2023 15:14:52 +0900</lastBuildDate><atom:link href="https://devkan.github.io/categories/main/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Main</title>
       <link>https://devkan.github.io/post/main/</link>
