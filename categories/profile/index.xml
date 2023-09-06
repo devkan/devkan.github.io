@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Senior Developer&#39;s Blog</title>
-    <link>https://devkan.github.io/post/</link>
-    <description>Recent content in Posts on Senior Developer&#39;s Blog</description>
+    <title>profile on Senior Developer&#39;s Blog</title>
+    <link>https://devkan.github.io/categories/profile/</link>
+    <description>Recent content in profile on Senior Developer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 05 Sep 2023 15:14:52 +0900</lastBuildDate><atom:link href="https://devkan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Main</title>
-      <link>https://devkan.github.io/post/main/</link>
-      <pubDate>Tue, 05 Sep 2023 15:14:52 +0900</pubDate>
-      
-      <guid>https://devkan.github.io/post/main/</guid>
-      <description>Tally.so
-Tally.so는 온라인으로 양식과 설문 조사를 만들고 관리할 수 있는 웹 사이트다.
-다양한 유형의 양식과 설문 조사를 만들 수 있으며, 사용자 정의가 가능하고 분석 도구가 내장되어 있으며, 개인, 기업, 비영리 단체 등 다양한 사용자에게 적합하다.
-웹 무료 취약점 사이트
-https://observatory.mozilla.org/</description>
-    </item>
-    
+    <lastBuildDate>Sun, 06 Aug 2023 13:53:55 +0900</lastBuildDate><atom:link href="https://devkan.github.io/categories/profile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>about Me</title>
       <link>https://devkan.github.io/post/profile/</link>

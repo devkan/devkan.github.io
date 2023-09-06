@@ -514,7 +514,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding: .625rem .9375rem;
 	font-weight: 700;
 	color: #fff;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 .menu__link:hover {
