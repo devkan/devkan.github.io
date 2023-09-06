@@ -6,7 +6,25 @@
     <description>Recent content on Senior Developer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 05 Sep 2023 15:14:52 +0900</lastBuildDate><atom:link href="https://devkan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Sep 2023 18:34:50 +0900</lastBuildDate><atom:link href="https://devkan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github_page_blog_2</title>
+      <link>https://devkan.github.io/post/devdiary/github_page_blog_2/</link>
+      <pubDate>Wed, 06 Sep 2023 18:34:50 +0900</pubDate>
+      
+      <guid>https://devkan.github.io/post/devdiary/github_page_blog_2/</guid>
+      <description>github page blog 222</description>
+    </item>
+    
+    <item>
+      <title>Github_page_blog_1</title>
+      <link>https://devkan.github.io/post/devdiary/github_page_blog_1/</link>
+      <pubDate>Wed, 06 Sep 2023 18:34:38 +0900</pubDate>
+      
+      <guid>https://devkan.github.io/post/devdiary/github_page_blog_1/</guid>
+      <description>github page blog 111</description>
+    </item>
+    
     <item>
       <title>Main</title>
       <link>https://devkan.github.io/post/main/</link>
