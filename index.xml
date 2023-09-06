@@ -17,12 +17,15 @@
     </item>
     
     <item>
-      <title>Github_page_blog_1</title>
+      <title>Github Pages로 블로그 만들기(1)</title>
       <link>https://devkan.github.io/post/devdiary/github_page_blog_1/</link>
       <pubDate>Wed, 06 Sep 2023 18:34:38 +0900</pubDate>
       
       <guid>https://devkan.github.io/post/devdiary/github_page_blog_1/</guid>
-      <description>github page blog 111</description>
+      <description>github pages라는 것이 github에 있습니다.
+처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
+html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..
+이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.</description>
     </item>
     
     <item>
