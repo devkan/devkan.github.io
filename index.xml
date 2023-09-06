@@ -25,7 +25,11 @@
       <description>github pages라는 것이 github에 있습니다.
 처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
 html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..
-이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.</description>
+이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.
+보다 자세한 것은 github pages 를 참조하시면 됩니다.
+하지만, 얼마 지나지 않아서 저의 생각이 잘못 되었다는 것을 알게 되었습니다.
+이것을 알기위해서는 static site가 뭔지 알아야 합니다.
+Static Site 쉽게 말해서 html, js, css로 구성된 정적 사이트입니다.</description>
     </item>
     
     <item>
