@@ -58,7 +58,7 @@ body {
 	max-width: 1080px;
 	margin: 0 auto;
 
-	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("/img/code.png");
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("/img/top_bg.png");
 	background-repeat: no-repeat;
 	background-position: right center;
 }
