@@ -52,7 +52,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.container {
+.container_top {
 	position: relative;
 	width: 100%;
 	max-width: 1080px;
@@ -61,6 +61,13 @@ body {
 	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("/img/top_bg.png");
 	background-repeat: no-repeat;
 	background-position: right center;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
 }
 
 .container--outer {
