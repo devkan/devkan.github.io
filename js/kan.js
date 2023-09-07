@@ -1,8 +1,8 @@
 
 // target add attribute
-const links = document.querySelectorAll('a.post__content');
+const postContent = document.querySelector('.post__content');
+const links = postContent.querySelectorAll('a');
+
 links.forEach(link => {
-  if (!link.hasAttribute('target')) {
-    link.setAttribute('target', '_blank');
-  }
+  link.setAttribute('target', '_blank');
 });
