@@ -8,11 +8,11 @@
     <language>ko</language>
     <lastBuildDate>Wed, 06 Sep 2023 09:34:38 +0000</lastBuildDate><atom:link href="https://devkan.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Github Pages로 블로그 만들기(1)</title>
-      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/</link>
+      <title>Github Pages로 블로그 만들기 I</title>
+      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-i/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:38 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/</guid>
+      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-i/</guid>
       <description>github pages라는 것이 github에 있습니다.
 처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
 html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..
