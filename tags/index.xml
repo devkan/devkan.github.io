@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Chocolatey</title>
+      <link>https://devkan.github.io/tags/chocolatey/</link>
+      <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/tags/chocolatey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>https://devkan.github.io/tags/github/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
@@ -44,11 +53,11 @@
     </item>
     
     <item>
-      <title>Markdown</title>
-      <link>https://devkan.github.io/tags/markdown/</link>
+      <title>PowerShell</title>
+      <link>https://devkan.github.io/tags/powershell/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
       
-      <guid>https://devkan.github.io/tags/markdown/</guid>
+      <guid>https://devkan.github.io/tags/powershell/</guid>
       <description></description>
     </item>
     
@@ -58,6 +67,15 @@
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
       
       <guid>https://devkan.github.io/tags/ssg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://devkan.github.io/tags/markdown/</link>
+      <pubDate>Wed, 06 Sep 2023 09:34:38 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     

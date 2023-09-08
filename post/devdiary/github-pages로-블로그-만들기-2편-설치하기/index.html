@@ -31,8 +31,8 @@ PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 �
 &gt; Set-ExecutionPolicy Bypass -Scope Process &gt; Get-ExecutionPolicy Bypass 그리고 &gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
 Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다."><meta itemprop="datePublished" content="2023-09-06T09:34:50+00:00" />
 <meta itemprop="dateModified" content="2023-09-06T09:34:50+00:00" />
-<meta itemprop="wordCount" content="263">
-<meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,Markdown," />
+<meta itemprop="wordCount" content="274">
+<meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,PowerShell,Chocolatey," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -148,7 +148,7 @@ if (!doNotTrack) {
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">DevKan</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-06T09:34:50Z">2023-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/github/" rel="category">GitHub</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-06T09:34:50Z">2023-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/github/" rel="category">GitHub</a>, <a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 		</header>
@@ -195,8 +195,7 @@ powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
  </p>
 <h3 id="hugo-설치">Hugo 설치</h3>
 <p>choco 설치후 path를 등록은 해 주어야 하는지, 안해도 등록이 시켜주는지를 모르겠네요.. ^^;<br>
-(이전에 설치된 상태라서요.. choco를 인식 못하면 시스템 관리에서 path를 등록해 주세요.)<br>
-7</p>
+(이전에 설치된 상태라서요.. choco를 인식 못하면 시스템 관리에서 path를 등록해 주세요.)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; choco install hugo-extended -confirm
 </span></span><span style="display:flex;"><span>Chocolatey v2.1.0
 </span></span><span style="display:flex;"><span>Installing the following packages:
@@ -218,7 +217,15 @@ powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
 <p>hugo가 제대로 설치 되었는지 확인해 보면..</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; hugo version
 </span></span><span style="display:flex;"><span>hugo v0.118.2-da7983ac4b94d97d776d7c2405040de97e95c03d+extended windows/amd64 BuildDate<span style="color:#f92672">=</span>2023-08-31T11:23:51Z VendorInfo<span style="color:#f92672">=</span>gohugoio
-</span></span></code></pre></div><p>직접 설치를 할 경우 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 에서 windows용으로 설치를 하면 됩니다. (go, git을 설치해야 하는것으로 알고 있습니다.)</p>
+</span></span></code></pre></div><p>직접 설치를 할 경우 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 에서 windows용으로 설치를 하면 됩니다. (go, git을 설치해야 하는것으로 알고 있습니다.)<br>
+ </p>
+<p><strong>참고 문서:</strong></p>
+<ul>
+<li><a href="https://chocolatey.org/">Chocolatey 공식 웹사이트</a></li>
+<li><a href="https://gohugo.io/">Hugo 공식 웹사이트</a></li>
+<li><a href="https://pages.github.com/">GitHub Pages 공식 문서</a></li>
+</ul>
+<p> </p>
 
 		</div>
 		<footer class="post__footer">
@@ -242,7 +249,10 @@ powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
 			<a class="tags__link btn" href="/tags/blog/" rel="tag">Blog</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/markdown/" rel="tag">Markdown</a>
+			<a class="tags__link btn" href="/tags/powershell/" rel="tag">PowerShell</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/chocolatey/" rel="tag">Chocolatey</a>
 		</li>
 	</ul>
 </div>
@@ -312,6 +322,10 @@ powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
 				<a class="widget__link" href="/categories/github/">GitHub</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">2</span>
 				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/hugo/">Hugo</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
 		</ul>
 	</div>
 </div>
@@ -319,11 +333,13 @@ powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="Blog">Blog (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/chocolatey/" title="Chocolatey">Chocolatey (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devkan/" title="DevKan">DevKan (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="GitHub">GitHub (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github-pages/" title="GitHub Pages">GitHub Pages (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/markdown/" title="Markdown">Markdown (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/markdown/" title="Markdown">Markdown (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/powershell/" title="PowerShell">PowerShell (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ssg/" title="SSG">SSG (2)</a>
 	</div>
 </div>

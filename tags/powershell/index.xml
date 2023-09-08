@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on Senior Developer&#39;s Blog</title>
+    <link>https://devkan.github.io/tags/powershell/</link>
+    <description>Recent content in PowerShell on Senior Developer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 06 Sep 2023 09:34:50 +0000</lastBuildDate><atom:link href="https://devkan.github.io/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github Pages로 블로그 만들기 2편 -설치하기</title>
+      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <description>현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
+PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
+&amp;gt; Get-ExecutionPolicy Bypass Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.
+&amp;gt; Set-ExecutionPolicy Bypass -Scope Process &amp;gt; Get-ExecutionPolicy Bypass 그리고 &amp;gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
+Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다.</description>
+    </item>
+    
+  </channel>
+</rss>
