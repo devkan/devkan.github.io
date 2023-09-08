@@ -4,38 +4,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Github Pages로 블로그 만들기 1편 - Senior Developer&#39;s Blog</title>
+	<title>Github Pages로 블로그 만들기 2편 -설치하기 - Senior Developer&#39;s Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
 
 	<meta name="naver-site-verification" content="0d891ca580b2d5c47b2f83baba8a02a404bfa20c" />
 	<meta name="description" content="">
-		<meta property="og:title" content="Github Pages로 블로그 만들기 1편" />
-<meta property="og:description" content="github pages라는 것이 github에 있습니다.
-처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
-html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..
-이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.
-보다 자세한 것은 github pages 를 참조하시면 됩니다.
-하지만, 얼마 지나지 않아서 저의 생각이 잘못 되었다는 것을 알게 되었습니다.
-이것을 알기위해서는 static site가 뭔지 알아야 합니다.
-Static Site 쉽게 말해서 html, js, css로 구성된 정적 사이트입니다." />
+		<meta property="og:title" content="Github Pages로 블로그 만들기 2편 -설치하기" />
+<meta property="og:description" content="현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
+PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
+&gt; Get-ExecutionPolicy Bypass Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.
+&gt; Set-ExecutionPolicy Bypass -Scope Process &gt; Get-ExecutionPolicy Bypass 그리고 &gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
+Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-09-06T09:34:38+00:00" />
-<meta property="article:modified_time" content="2023-09-06T09:34:38+00:00" />
+<meta property="og:url" content="https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-09-06T09:34:50+00:00" />
+<meta property="article:modified_time" content="2023-09-06T09:34:50+00:00" />
 
-		<meta itemprop="name" content="Github Pages로 블로그 만들기 1편">
-<meta itemprop="description" content="github pages라는 것이 github에 있습니다.
-처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
-html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..
-이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.
-보다 자세한 것은 github pages 를 참조하시면 됩니다.
-하지만, 얼마 지나지 않아서 저의 생각이 잘못 되었다는 것을 알게 되었습니다.
-이것을 알기위해서는 static site가 뭔지 알아야 합니다.
-Static Site 쉽게 말해서 html, js, css로 구성된 정적 사이트입니다."><meta itemprop="datePublished" content="2023-09-06T09:34:38+00:00" />
-<meta itemprop="dateModified" content="2023-09-06T09:34:38+00:00" />
-<meta itemprop="wordCount" content="364">
+		<meta itemprop="name" content="Github Pages로 블로그 만들기 2편 -설치하기">
+<meta itemprop="description" content="현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
+PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
+&gt; Get-ExecutionPolicy Bypass Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.
+&gt; Set-ExecutionPolicy Bypass -Scope Process &gt; Get-ExecutionPolicy Bypass 그리고 &gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
+Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다."><meta itemprop="datePublished" content="2023-09-06T09:34:50+00:00" />
+<meta itemprop="dateModified" content="2023-09-06T09:34:50+00:00" />
+<meta itemprop="wordCount" content="263">
 <meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,Markdown," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -147,12 +143,12 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Github Pages로 블로그 만들기 1편</h1>
+			<h1 class="post__title">Github Pages로 블로그 만들기 2편 -설치하기</h1>
 			<div class="post__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">DevKan</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-06T09:34:38Z">2023-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/github/" rel="category">GitHub</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-06T09:34:50Z">2023-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/github/" rel="category">GitHub</a>
 	</span>
 </div></div>
 		</header>
@@ -164,69 +160,65 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
-        <li><a href="#static-site">Static Site</a></li>
-        <li><a href="#markdown">Markdown</a></li>
+        <li><a href="#powershell-권한-확인">PowerShell 권한 확인</a></li>
+        <li><a href="#chocolatey-설치">Chocolatey 설치</a></li>
+        <li><a href="#hugo-설치">Hugo 설치</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<p>github pages라는 것이 github에 있습니다.<br>
-처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,<br>
-html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..<br>
-이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.<br>
+			<p>현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.<br>
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.<br>
  </p>
-<p><img src="/img/devdiary/106.png" alt="Github pages"></p>
-<p>보다 자세한 것은 <a href="https://pages.github.com/">github pages</a> 를 참조하시면 됩니다.</p>
-<p>하지만, 얼마 지나지 않아서 저의 생각이 잘못 되었다는 것을 알게 되었습니다.<br>
-이것을 알기위해서는 static site가 뭔지 알아야 합니다.</p>
-<h3 id="static-site">Static Site</h3>
-<blockquote>
-<p>쉽게 말해서 html, js, css로 구성된 정적 사이트입니다.<br>
-즉, 디비를 통한 CRUD가 없습니다. 그냥 로컬에서 html 페이지 만드는거라 생각하면 될거 같네요.</p>
-</blockquote>
-<p>자꾸 설명을 하려고 하네요.. ㅡ.ㅜ;<br>
+<h3 id="powershell-권한-확인">PowerShell 권한 확인</h3>
+<p>관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; Get-ExecutionPolicy
+</span></span><span style="display:flex;"><span>Bypass
+</span></span></code></pre></div><p>Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; Set-ExecutionPolicy Bypass -Scope Process
+</span></span><span style="display:flex;"><span>&gt; Get-ExecutionPolicy
+</span></span><span style="display:flex;"><span>Bypass
+</span></span></code></pre></div><p>그리고 <code>&gt; Get-ExecutionPolicy</code> 로 Bypass로 나오는지 확인하면 된다.<br>
  </p>
-<p>아무튼 SSG(Static Site Generator)를 통해서 정적 사이트를 만들고, 이걸 github pages에 올리면 블로그가 된다는 겁니다.</p>
-<p>이 SSG로는 hugo라는 것을 이용할것이며, 글은 vscode 같은 곳에서 markdown으로 작성해서 github로 올려서 서비스 된다고 생각하면 됩니다.<br>
+<h3 id="chocolatey-설치">Chocolatey 설치</h3>
+<p>hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다.<br>
+직접 hugo를 설치하는 있기는 한데, go랑 git등을 설치해 줘야 한다고 합니다.<br>
+(전 git이랑 choco가 이리 깔려있어서, 이 방법으로 합니다.)</p>
+<pre tabindex="0"><code>PowerShell v2+ 이상, .NET Framework 4.8이 설치되어 있어야 합니다.
+</code></pre><p><a href="https://chocolatey.org/install#individual">https://chocolatey.org/install#individual</a> 으로 들어가면 설치 방법이 나와 있습니다.
+powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; Set-ExecutionPolicy Bypass -Scope Process -Force; <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol -bor 3072; iex <span style="color:#f92672">((</span>New-Object System.Net.WebClient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
+</span></span></code></pre></div><p><img src="/img/devdiary/087.png" alt="Github pages"></p>
+<p>이 페이지를 참조하면 됩니다.<br>
  </p>
-<p><img src="/img/devdiary/107.png" alt="Hugo"></p>
-<p>SSG로는 몇개 툴이 있는데, 이들은 장단점은 찾아보셔도 될거 같고요.<br>
-hugo가 제일 빠르고, 구성이 잘 되어 있는거 같습니다.<br>
-다만 국내쪽 정보는 아직 많지 않으편이라서 조금 고생은 할 수 있습니다.</p>
-<p>SSG의 특징과 장단점은 다음과 같습니다:</p>
-<p><strong>Jekyll</strong><br>
-장점: 많은 기능과 플러그인, 큰 커뮤니티 지원, GitHub Pages와의 완벽한 통합.<br>
-단점: Ruby로 작성되어 Ruby 환경 구성 필요.</p>
-<p><strong>Hugo</strong><br>
-장점: 빠른 속도, Go 언어 기반으로 개발되어 컴파일 속도가 빠름, 다양한 테마와 확장 기능 제공.<br>
-단점: 상대적으로 작은 커뮤니티 규모.</p>
-<p><strong>Gatsby</strong><br>
-장점: React 기반으로 유연하고 동적인 웹사이트 개발 가능, GraphQL을 사용한 데이터 관리 용이.<br>
-단점: 초기 빌드 시간이 오래 걸릴 수 있음.</p>
-<p><strong>Next.js</strong><br>
-장점: React 생태계를 기반으로 한 SSR(Server-Side Rendering) 및 SSG 모두 지원, 개발자 친화적인 경험 제공.<br>
-단점: 복잡한 설정 및 학습 곡선.</p>
-<p><strong>VuePress</strong><br>
-장점: Vue.js 생태계와 긴밀한 통합, 마크다운 문서 작성에 강조된 초점.<br>
-단점: 다른 프레임워크와 비교할 때 일부 제약 사항 존재.<br>
- <br>
- </p>
-<p>그리고 Markdown이라는 것도 알아야 합니다.</p>
-<h3 id="markdown">Markdown</h3>
-<blockquote>
-<p>Markdown은 간단한 텍스트 기반 마크업 언어로, 웹에서 서식을 지정하고 문서를 작성하는 데 사용됩니다.<br>
-HTML을 배우지 않아도 쉽게 사용할 수 있으며, 제목, 리스트, 강조 등 다양한 서식을 지원합니다.</p>
-</blockquote>
-<p>라고 GPT가 알려주고 있는데, 텍스트로 코딩하듯이 그냥 적으면 형식이 만들수 있다는게 제일 큰 장점입니다.<br>
-일반적으로 .md 파일이라고 되어 있는 것들이 다 이 마크다운으로 작성된 문서입니다.<br>
-(개발을 하다보면, 많이 보게 되죠..)</p>
-<p>웹용 블로그를 사용하면, 형식 처리를 위해서 꾸미기를 이것저것 많이 하다는데, 하다보면 생각보다 많이 힘들더군요..<br>
-노션이 제일 편한거 같기는 한데, 마크다운에서도 이와 비슷하게 텍스트로 구현이 가능하니 나름 좋은거 같아서..
-전 이쪽으로 방향을 잡았습니다.</p>
-<p>그럼 다음 글에서 설치 및 설정을 해 보도록 하겠습니다.. ^^;<br>
-끝.</p>
+<h3 id="hugo-설치">Hugo 설치</h3>
+<p>choco 설치후 path를 등록은 해 주어야 하는지, 안해도 등록이 시켜주는지를 모르겠네요.. ^^;<br>
+(이전에 설치된 상태라서요.. choco를 인식 못하면 시스템 관리에서 path를 등록해 주세요.)<br>
+7</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; choco install hugo-extended -confirm
+</span></span><span style="display:flex;"><span>Chocolatey v2.1.0
+</span></span><span style="display:flex;"><span>Installing the following packages:
+</span></span><span style="display:flex;"><span>hugo-extended
+</span></span><span style="display:flex;"><span>By installing, you accept licenses <span style="color:#66d9ef">for</span> the packages.
+</span></span><span style="display:flex;"><span>Progress: Downloading hugo-extended 0.118.2... 100%
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hugo-extended v0.118.2 <span style="color:#f92672">[</span>Approved<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>hugo-extended package files install completed. Performing other installation steps.
+</span></span><span style="display:flex;"><span>Extracting 64-bit C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\h</span>ugo-extended<span style="color:#ae81ff">\t</span>ools<span style="color:#ae81ff">\h</span>ugo_extended_0.118.2_windows-amd64.zip to C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\h</span>ugo-extended<span style="color:#ae81ff">\t</span>ools...
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\h</span>ugo-extended<span style="color:#ae81ff">\t</span>ools
+</span></span><span style="display:flex;"><span> ShimGen has successfully created a shim <span style="color:#66d9ef">for</span> hugo.exe
+</span></span><span style="display:flex;"><span> The install of hugo-extended was successful.
+</span></span><span style="display:flex;"><span>  Software installed to <span style="color:#e6db74">&#39;C:\ProgramData\chocolatey\lib\hugo-extended\tools&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Chocolatey installed 1/1 packages.
+</span></span><span style="display:flex;"><span> See the log <span style="color:#66d9ef">for</span> details <span style="color:#f92672">(</span>C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ogs<span style="color:#ae81ff">\c</span>hocolatey.log<span style="color:#f92672">)</span>.
+</span></span></code></pre></div><p> </p>
+<p>hugo가 제대로 설치 되었는지 확인해 보면..</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; hugo version
+</span></span><span style="display:flex;"><span>hugo v0.118.2-da7983ac4b94d97d776d7c2405040de97e95c03d+extended windows/amd64 BuildDate<span style="color:#f92672">=</span>2023-08-31T11:23:51Z VendorInfo<span style="color:#f92672">=</span>gohugoio
+</span></span></code></pre></div><p>직접 설치를 할 경우 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 에서 windows용으로 설치를 하면 됩니다. (go, git을 설치해야 하는것으로 알고 있습니다.)</p>
 
 		</div>
 		<footer class="post__footer">
@@ -274,10 +266,10 @@ HTML을 배우지 않아도 쉽게 사용할 수 있으며, 제목, 리스트, �
 </div>
 
 <nav class="pager flex">
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Github Pages로 블로그 만들기 2편 -설치하기</p>
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Github Pages로 블로그 만들기 1편</p>
 		</a>
 	</div>
 </nav>

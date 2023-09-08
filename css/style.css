@@ -52,6 +52,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+/* kan add */
 .container_top {
 	position: relative;
 	width: 100%;
@@ -62,6 +63,12 @@ body {
 	background-repeat: no-repeat;
 	background-position: right center;
 }
+
+.highlight pre {
+  font-size: 14px;
+}
+
+/* kan add end */
 
 .container {
 	position: relative;
