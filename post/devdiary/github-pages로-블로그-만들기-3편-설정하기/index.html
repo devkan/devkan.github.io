@@ -31,7 +31,7 @@
 하나는 hugo에 의해 렌더링 된 후의 결과물을 저장하는 repository(여기서는 devkan.github.io)입니다.
 다시 정리하면, vscode에서 컨텐츠를 생성하고, 이것을 hugo로 렌더링을 합니다. 그럼 hugo에서 테마나 템플릿을 이용해서 각각의 페이지를 만들어 냅니다. (즉, 헤더/풋터/메뉴등을 알아서 붙여주고.. 필요한 카테고리/태그등도 만들고, 페이징도 별도 구성도 하고 합니다.) 그리 만들어진 결과물을 원본소스는 gitblog로 push하고, 렌더링된 컨텐츠는 devkan."><meta itemprop="datePublished" content="2023-09-08T08:21:44+00:00" />
 <meta itemprop="dateModified" content="2023-09-08T08:21:44+00:00" />
-<meta itemprop="wordCount" content="193">
+<meta itemprop="wordCount" content="331">
 <meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,Hugo Theme," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -169,7 +169,11 @@ if (!doNotTrack) {
 github pages에서 보이게 되는겁니다.  
 
 github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(약 1분정도)  
-</code></pre><p> <br>
+</code></pre><p> </p>
+<p><img src="/img/devdiary/071.png" alt="public repository"></p>
+<p>public으로 공개된 repository가 외부에서 접근이 가능핝지 확인해 보고, 만일 안된다면 해당 레포지토리의 setting에서 pages로 들어가 도메인을 적어주면 됩니다.<br>
+(일반적으로 [username].github.io 로 설정하면 됩니다.)</p>
+<p> <br>
  <br>
 이제 블로그를 생성해 보겠습니다.<br>
 <code>hugo new site &lt;디렉토리&gt;</code> 로 생성을 하면 블로그 기본 디렉토리가 생성되게 됩니다.</p>
@@ -187,6 +191,30 @@ github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(�
 </span></span><span style="display:flex;"><span>5. Start the embedded web server with the command <span style="color:#e6db74">&#34;hugo server --buildDrafts&#34;</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>See documentation at https://gohugo.io/.
+</span></span></code></pre></div><p> </p>
+<p>그리고 git으로 readme.md를 생성해 주고, remote를 추가해 주고 서브모듈도 추가해 줄겁니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gitblog&gt; git init
+</span></span><span style="display:flex;"><span>gitblog&gt; echo <span style="color:#e6db74">&#34;# gitblog&#34;</span> &gt;&gt; README.md
+</span></span><span style="display:flex;"><span>gitblog&gt; git add .<span style="color:#ae81ff">\R</span>EADME.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>master <span style="color:#f92672">(</span>root-commit<span style="color:#f92672">)</span> 29deb9a<span style="color:#f92672">]</span> first commit
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">1</span> file changed, <span style="color:#ae81ff">0</span> insertions<span style="color:#f92672">(</span>+<span style="color:#f92672">)</span>, <span style="color:#ae81ff">0</span> deletions<span style="color:#f92672">(</span>-<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> create mode <span style="color:#ae81ff">100644</span> README.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git branch -M main
+</span></span><span style="display:flex;"><span>gitblog&gt; git remote add origin https://github.com/devkan/gitblog.git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git push -u origin main
+</span></span><span style="display:flex;"><span>Enumerating objects: 3, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Counting objects: 100% <span style="color:#f92672">(</span>3/3<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Writing objects: 100% <span style="color:#f92672">(</span>3/3<span style="color:#f92672">)</span>, <span style="color:#ae81ff">230</span> bytes | 230.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Total <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>delta 0<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>To https://github.com/devkan/gitblog.git
+</span></span><span style="display:flex;"><span> * <span style="color:#f92672">[</span>new branch<span style="color:#f92672">]</span>      main -&gt; main
+</span></span><span style="display:flex;"><span>branch <span style="color:#e6db74">&#39;main&#39;</span> set up to track <span style="color:#e6db74">&#39;origin/main&#39;</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git submodule add -b main https://github.com/devkan/devkan.github.io.git public
 </span></span></code></pre></div>
 		</div>
 		<footer class="post__footer">
