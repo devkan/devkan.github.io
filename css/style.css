@@ -43,7 +43,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 14px;
 	font-size: .875rem;
 	line-height: 1.6;
@@ -280,7 +280,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: 'Nanum Gothic', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+	font-family: 'Noto Sans KR', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 	font-size: inherit;
 }
 
