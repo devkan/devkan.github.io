@@ -70,6 +70,12 @@ body {
   overflow-x: auto;	
 }
 
+pre code {
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
 /* kan add end */
 
 .container {
