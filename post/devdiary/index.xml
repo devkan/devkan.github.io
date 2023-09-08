@@ -8,6 +8,19 @@
     <language>ko</language>
     <lastBuildDate>Fri, 01 Sep 2023 18:47:33 +0900</lastBuildDate><atom:link href="https://devkan.github.io/post/devdiary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Github Pages로 블로그 만들기 3편 -설정하기</title>
+      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 08 Sep 2023 08:21:44 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <description>이제 hugo에서 사이트를 생성해 보자.
+우선 github에 두개의 repository를 생성해야 합니다.
+하나는 hugo에 의해 렌더링 된 후의 결과물을 저장하는 repository(여기서는 devkan.github.io)입니다.
+hugo new site &amp;lt;디렉토리&amp;gt; 로 생성을 하면 블로그 기본 디렉토리가 생성되게 됩니다.
+&amp;gt; hugo new site gitblog Congratulations! Your new Hugo site was created in D:\WebWork\Github\00.Blog\gitblog. Just a few more steps... 1. Change the current directory to D:\WebWork\Github\00.Blog\gitblog. 2. Create or install a theme: - Create a new theme with the command &amp;#34;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;#34; - Install a theme from https://themes.</description>
+    </item>
+    
+    <item>
       <title>Github Pages로 블로그 만들기 2편 -설치하기</title>
       <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>

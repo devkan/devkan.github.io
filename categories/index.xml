@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Senior Developer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 06 Sep 2023 09:34:50 +0000</lastBuildDate><atom:link href="https://devkan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Sep 2023 08:21:44 +0000</lastBuildDate><atom:link href="https://devkan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://devkan.github.io/categories/hugo/</link>
+      <pubDate>Fri, 08 Sep 2023 08:21:44 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GitHub</title>
       <link>https://devkan.github.io/categories/github/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
       
       <guid>https://devkan.github.io/categories/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://devkan.github.io/categories/hugo/</link>
-      <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
-      
-      <guid>https://devkan.github.io/categories/hugo/</guid>
       <description></description>
     </item>
     
