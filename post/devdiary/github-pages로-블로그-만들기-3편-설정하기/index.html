@@ -13,7 +13,7 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Github Pages로 블로그 만들기 3편 -설정하기" />
 <meta property="og:description" content="이제 hugo에서 사이트를 생성해 보자.
-우선 github에 두개의 repository를 생성해야 합니다.
+1. Github에 Repository 생성하기 우선 github에 두개의 repository를 생성해야 합니다.
 하나는 hugo에 의해 렌더링 되기 전의 소스를 저장하는 repository(여기서는 gitblog)이고,
 이건 private으로 생성하셔야 합니다.
 하나는 hugo에 의해 렌더링 된 후의 결과물을 저장하는 repository(여기서는 devkan.github.io)입니다.
@@ -25,14 +25,14 @@
 
 		<meta itemprop="name" content="Github Pages로 블로그 만들기 3편 -설정하기">
 <meta itemprop="description" content="이제 hugo에서 사이트를 생성해 보자.
-우선 github에 두개의 repository를 생성해야 합니다.
+1. Github에 Repository 생성하기 우선 github에 두개의 repository를 생성해야 합니다.
 하나는 hugo에 의해 렌더링 되기 전의 소스를 저장하는 repository(여기서는 gitblog)이고,
 이건 private으로 생성하셔야 합니다.
 하나는 hugo에 의해 렌더링 된 후의 결과물을 저장하는 repository(여기서는 devkan.github.io)입니다.
 다시 정리하면, vscode에서 컨텐츠를 생성하고, 이것을 hugo로 렌더링을 합니다. 그럼 hugo에서 테마나 템플릿을 이용해서 각각의 페이지를 만들어 냅니다. (즉, 헤더/풋터/메뉴등을 알아서 붙여주고.. 필요한 카테고리/태그등도 만들고, 페이징도 별도 구성도 하고 합니다.) 그리 만들어진 결과물을 원본소스는 gitblog로 push하고, 렌더링된 컨텐츠는 devkan."><meta itemprop="datePublished" content="2023-09-08T08:21:44+00:00" />
 <meta itemprop="dateModified" content="2023-09-08T08:21:44+00:00" />
-<meta itemprop="wordCount" content="331">
-<meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,Hugo Theme," />
+<meta itemprop="wordCount" content="820">
+<meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,Hugo Theme,Git," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -156,9 +156,29 @@ if (!doNotTrack) {
 	</span>
 </div></div>
 		</header>
-		<div class="content post__content clearfix">
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-github에-repository-생성하기">1. Github에 Repository 생성하기</a></li>
+        <li><a href="#2-테마-적용하기">2. 테마 적용하기</a></li>
+        <li><a href="#3-github-연결하기">3. Github 연결하기</a></li>
+        <li><a href="#4-컨텐츠-생성하기">4. 컨텐츠 생성하기</a></li>
+        <li><a href="#5-github-pages에-배포하기">5. Github Pages에 배포하기</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
 			<p>이제 hugo에서 사이트를 생성해 보자.<br>
-우선 github에 두개의 repository를 생성해야 합니다.</p>
+ </p>
+<h3 id="1-github에-repository-생성하기">1. Github에 Repository 생성하기</h3>
+<p>우선 github에 두개의 repository를 생성해야 합니다.</p>
 <p><img src="/img/devdiary/088.png" alt="gitblog repository"></p>
 <p>하나는 hugo에 의해 렌더링 되기 전의 소스를 저장하는 repository(여기서는 gitblog)이고,<br>
 이건 private으로 생성하셔야 합니다.<br>
@@ -177,9 +197,32 @@ github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(�
 <p><img src="/img/devdiary/071.png" alt="public repository"></p>
 <p>public으로 공개된 repository가 외부에서 접근이 가능한지 확인해 보고, 만일 안된다면 해당 레포지토리의 setting에서 pages로 들어가 도메인을 적어주면 됩니다.<br>
 (일반적으로 <code>&lt;username&gt;.github.io</code> 로 설정하면 됩니다.)</p>
-<p> <br>
- <br>
-이제 블로그를 생성해 보겠습니다.<br>
+<p> </p>
+<h3 id="2-테마-적용하기">2. 테마 적용하기</h3>
+<p>테마는 <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> 에서 가져오면 됩니다.<br>
+원하는 테마를 찾은후, 저장소를 가져오면 됩니다.<br>
+형식은 <code>git clone https://github.com/&lt;theme 경로&gt;.git themes/&lt;theme 이름&gt;</code> 이렇게 하면 됩니다.<br>
+저는 mainroad를 사용했습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; git clone https://github.com/vimux/mainroad.git themes/mainroad
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># git submodule add https://github.com/&lt;theme 경로&gt;.git themes/&lt;theme 이름&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># cp themes/hugo-tranquilpeak-theme/exampleSite/config.toml config.toml</span>
+</span></span></code></pre></div><p>그럼 테마가 themes 밑에 설치가 됩니다.
+그리고 config.toml을 루트에 복사해 줍니다.<br>
+(이건 테마마다 다르니, 테마의 README.md를 참조하세요.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; cp themes/mainroad/exampleSite/config.toml config.toml
+</span></span></code></pre></div><p>이 설정 파일은 테마마다 틀리니, 테마의 README.md를 참조해 수정해 주셔야 합니다.<br>
+루트 밑에 보면 hugo.toml이 있는데, 이건 hugo에서 사용하는 설정파일입니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://devkan.github.io/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;ko&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Senior Developer&#39;s Blog&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;mainroad&#34;</span>
+</span></span></code></pre></div><p>이처럼 github 주소와 타이틀, 테마명을 지정해 주고.. 나머지 설정은 config.toml에서 지정해 주면 됩니다.<br>
+초기에 실수로 hugo.toml에 그냥 다 지정을 했는데.. 그래도 잘 작동하니 참조하시고요.. ^^;</p>
+<p> </p>
+<h3 id="3-github-연결하기">3. Github 연결하기</h3>
+<p>이제 블로그를 생성해 보겠습니다.<br>
 <code>hugo new site &lt;디렉토리&gt;</code> 로 생성을 하면 블로그 기본 디렉토리가 생성되게 됩니다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; hugo new site gitblog
 </span></span><span style="display:flex;"><span>Congratulations! Your new Hugo site was created in D:<span style="color:#ae81ff">\W</span>ebWork<span style="color:#ae81ff">\G</span>ithub<span style="color:#ae81ff">\0</span>0.Blog<span style="color:#ae81ff">\g</span>itblog.
@@ -219,7 +262,94 @@ github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(�
 </span></span><span style="display:flex;"><span>branch <span style="color:#e6db74">&#39;main&#39;</span> set up to track <span style="color:#e6db74">&#39;origin/main&#39;</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>gitblog&gt; git submodule add -b main https://github.com/devkan/devkan.github.io.git public
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>그럼 public 디렉토리가 생성이 되며, 차후 렌더링을 하면 아래처럼 결과물이 이곳에 위치하게 됩니다.<br>
+초기에는 그냥 디렉토리만 생성이 될겁니다.</p>
+<p><img src="/img/devdiary/124.png" alt="public directory"></p>
+<p> </p>
+<h3 id="4-컨텐츠-생성하기">4. 컨텐츠 생성하기</h3>
+<p>이제 모든 준비가 되었으니, 컨텐츠를 생성해 보겠습니다.<br>
+컨텐츠는 <code>hugo new &lt;section&gt;/&lt;filename&gt;.&lt;format&gt;</code> 으로 생성을 합니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gitblog&gt; hugo new post/test.md
+</span></span><span style="display:flex;"><span>Content <span style="color:#e6db74">&#34;D:\\WebWork\\Github\\gitblog\\content\\post\\test.md&#34;</span> created
+</span></span></code></pre></div><p> <br>
+test.md를 열어서 수정하겠습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>title = &#39;Test&#39;
+</span></span><span style="display:flex;"><span>date = 2023-09-04T19:12:17+09:00
+</span></span><span style="display:flex;"><span>draft = true
+</span></span><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>11111
+</span></span></code></pre></div><p>draft를 true로 하면, <code>hugo server</code>로 웹서버를 실행했을때 보이지 않습니다.<br>
+<code>hugo server -D</code> 로 해야지 웹서버상에 노출됩니다.<br>
+글 작성시 우선 true로 하고, 완성되면 false로 바꾸는식으로 하면 됩니다.<br>
+ </p>
+<p>hugo로 웹서버를 실행해 보겠습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gitblog&gt; hugo server -D <span style="color:#75715e"># 웹서버 실행</span>
+</span></span></code></pre></div><p>그리고 http://localhost:1313/ 로 접속해 보면 아래와 같이 보입니다.<br>
+<img src="/img/devdiary/091.png" alt="hugo 웹서버"><br>
+ </p>
+<p>vscode terminal에서 server를 실행하면, 페이지 수정시 바로 결과물을 볼 수 있어 편합니다.</p>
+<p><img src="/img/devdiary/090.png" alt="vscode terminal"></p>
+<p> </p>
+<h3 id="5-github-pages에-배포하기">5. Github Pages에 배포하기</h3>
+<p>실제 github pages에 배포를 해 보겠습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gitblog&gt; hugo -t mainroad <span style="color:#75715e"># hugo -t &lt;테마명&gt;</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; cd public <span style="color:#75715e"># public 디렉토리로 이동</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git add . <span style="color:#75715e"># 모든 변경 내용을 스테이징(Staging)</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git commit -m <span style="color:#e6db74">&#34;first build&#34;</span> <span style="color:#75715e"># commit</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git push origin main <span style="color:#75715e"># push</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gitblog&gt; cd .. <span style="color:#75715e"># gitblog 디렉토리로 이동</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git add . <span style="color:#75715e"># gitblog 디렉토리로 이동</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git add . <span style="color:#75715e"># 모든 변경 내용을 스테이징(Staging)</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git commit -m <span style="color:#e6db74">&#34;first build&#34;</span> <span style="color:#75715e"># commit</span>
+</span></span><span style="display:flex;"><span>gitblog&gt; git push origin main <span style="color:#75715e"># push</span>
+</span></span></code></pre></div><p>정상적으로 되었다면, <code>https://&lt;username&gt;.github.io/</code>  로 접속하면 test 페이지가 보일겁니다..<br>
+그럼 매번 수정후 저 명령어를 입력해야 하느냐.. 아닙니다.
+shell script를 만들면 편히 빌드를 시킬수 있습니다.<br>
+ </p>
+<p>deploy.sh 내용입니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># hugo -t &lt;테마&gt;</span>
+</span></span><span style="display:flex;"><span>hugo -t mainroad
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Go To Public folder, sub module commit</span>
+</span></span><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add changes to git.</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commit changes.</span>
+</span></span><span style="display:flex;"><span>msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Push source and build repos.</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Come Back up to the Project Root</span>
+</span></span><span style="display:flex;"><span>cd ..
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># blog 저장소 Commit &amp; Push</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div><p>그리고 터미널에서 실행하면 알아서 빌드가 되고, push가 됩니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gitblog&gt; .<span style="color:#ae81ff">\d</span>eploy.sh
+</span></span></code></pre></div><p>주의 할것은 터미널에서 <code>&gt; deploy.sh</code>로 실행하면 안되고, <code>&gt; .\deploy.sh</code>로 해야 실행이 됩니다.<br>
+다음편에서는 댓글 추가와 테마 수정에 대해서 좀더 알아보겠습니다.<br>
+끝.<br>
+ </p>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -243,6 +373,9 @@ github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(�
 		</li>
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/hugo-theme/" rel="tag">Hugo Theme</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/git/" rel="tag">Git</a>
 		</li>
 	</ul>
 </div>
@@ -300,7 +433,7 @@ github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(�
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Github Pages로 블로그 만들기 3편 -설정하기</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">Github Pages로 블로그 만들기 2편 -설치하기</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8/">Github Pages로 블로그 만들기 1편</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8-%EC%86%8C%EA%B0%9C%ED%95%98%EA%B8%B0/">Github Pages로 블로그 만들기 1편 -소개하기</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/travel/%EA%B2%BD%EC%A3%BC-%EC%97%AC%EB%A6%84-%ED%9C%B4%EA%B0%80-%ED%92%80%EB%B9%8C%EB%9D%BC/">경주 여름 휴가 (풀빌라)</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/profile/">about Me</a></li>
 		</ul>
@@ -331,6 +464,7 @@ github pages에 바로 적용은 안되고, 딜레이가 약간 있습니다.(�
 		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="Blog">Blog (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/chocolatey/" title="Chocolatey">Chocolatey (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devkan/" title="DevKan">DevKan (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="GitHub">GitHub (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github-pages/" title="GitHub Pages">GitHub Pages (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (3)</a>

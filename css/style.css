@@ -76,6 +76,12 @@ pre code {
   overflow-x: auto;
 }
 
+blockquote  {
+  background-color: #fff4e6;
+  padding: 10px;
+}
+
+
 /* kan add end */
 
 .container {
@@ -196,6 +202,7 @@ h2 {
 h3 {
 	font-size: 20px;
 	font-size: 1.25rem;
+	color: #cc0000;
 }
 
 h4 {
