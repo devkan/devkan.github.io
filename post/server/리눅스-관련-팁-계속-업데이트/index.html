@@ -12,7 +12,7 @@
 	<meta name="naver-site-verification" content="0d891ca580b2d5c47b2f83baba8a02a404bfa20c" />
 	<meta name="description" content="">
 		<meta property="og:title" content="리눅스 관련 팁 (계속 업데이트)" />
-<meta property="og:description" content="- 로그파일에서 특정문자로 카운트시키기 아파치 로그에서 바로 아이별로 카운트 시킬때 사용하는 명령어입니다.
+<meta property="og:description" content="🏷 로그파일에서 특정문자로 카운트시키기 아파치 로그에서 바로 아이별로 카운트 시킬때 사용하는 명령어입니다.
 자주는 아닌데, 갑자기 트래픽 치고 올라오면 사용합니다.
 로그파일은 이와 같은 형식으로 기록된다고 할때입니다.
 12.34.56.76 - - [09/Sep/2023:14:20:25 &#43;0900] &ldquo;GET /assets/images/ico_play.png HTTP/1.1&rdquo; 200 3271
@@ -27,7 +27,7 @@ wc -l: 정렬된 IP 주소들의 개수를 세어 출력" />
 <meta property="article:modified_time" content="2023-09-14T04:32:38+00:00" />
 
 		<meta itemprop="name" content="리눅스 관련 팁 (계속 업데이트)">
-<meta itemprop="description" content="- 로그파일에서 특정문자로 카운트시키기 아파치 로그에서 바로 아이별로 카운트 시킬때 사용하는 명령어입니다.
+<meta itemprop="description" content="🏷 로그파일에서 특정문자로 카운트시키기 아파치 로그에서 바로 아이별로 카운트 시킬때 사용하는 명령어입니다.
 자주는 아닌데, 갑자기 트래픽 치고 올라오면 사용합니다.
 로그파일은 이와 같은 형식으로 기록된다고 할때입니다.
 12.34.56.76 - - [09/Sep/2023:14:20:25 &#43;0900] &ldquo;GET /assets/images/ico_play.png HTTP/1.1&rdquo; 200 3271
@@ -170,8 +170,8 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
-        <li><a href="#--로그파일에서-특정문자로-카운트시키기">- 로그파일에서 특정문자로 카운트시키기</a></li>
-        <li><a href="#--특정-단어가-포함된-파일-찾을때">- 특정 단어가 포함된 파일 찾을때</a></li>
+        <li><a href="#-로그파일에서-특정문자로-카운트시키기">🏷 로그파일에서 특정문자로 카운트시키기</a></li>
+        <li><a href="#-특정-단어가-포함된-파일-찾을때">🏷 특정 단어가 포함된 파일 찾을때</a></li>
       </ul>
     </li>
   </ul>
@@ -179,7 +179,7 @@ if (!doNotTrack) {
 	</div>
 </div><div class="content post__content clearfix">
 			<p> </p>
-<h3 id="--로그파일에서-특정문자로-카운트시키기">- 로그파일에서 특정문자로 카운트시키기</h3>
+<h3 id="-로그파일에서-특정문자로-카운트시키기">🏷 로그파일에서 특정문자로 카운트시키기</h3>
 <p>아파치 로그에서 바로 아이별로 카운트 시킬때 사용하는 명령어입니다.<br>
 자주는 아닌데, 갑자기 트래픽 치고 올라오면 사용합니다.<br>
 로그파일은 이와 같은 형식으로 기록된다고 할때입니다.</p>
@@ -205,7 +205,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">66</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 시간이 &#34;10/Sep/2023:13:12&#34;인 로그중 1분동안 접속 아이피(중복제거)</span>
 </span></span></code></pre></div><p> </p>
-<h3 id="--특정-단어가-포함된-파일-찾을때">- 특정 단어가 포함된 파일 찾을때</h3>
+<h3 id="-특정-단어가-포함된-파일-찾을때">🏷 특정 단어가 포함된 파일 찾을때</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; grep -r <span style="color:#e6db74">&#34;db&#34;</span> /home/dev/html/
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># /home/dev/html/ 디렉토리에서 db라는 단어가 포함된 파일을 찾을때..</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 디렉토리에서 사용시에는 -r 옵션을 사용해야 하위 디렉토리까지 검색이 됩니다.</span>
