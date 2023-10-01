@@ -6,7 +6,22 @@
     <description>Recent content on Senior Developer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 21 Sep 2023 06:25:02 +0000</lastBuildDate><atom:link href="https://devkan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Sep 2023 10:50:27 +0000</lastBuildDate><atom:link href="https://devkan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개발자를 위한 부사수 Github의 Copilot</title>
+      <link>https://devkan.github.io/post/devdiary/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B6%80%EC%82%AC%EC%88%98-github%EC%9D%98-copilot/</link>
+      <pubDate>Sat, 30 Sep 2023 10:50:27 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/post/devdiary/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B6%80%EC%82%AC%EC%88%98-github%EC%9D%98-copilot/</guid>
+      <description>앉아서 에디터 창에 코딩을 하다보면 집중이 잘 되어서 코딩이 막힘없이 되는 날이 있을겁니다.
+하지만 그런 날은 많지가 않죠..
+전화나 회의등으로 맥이 끊어지는 경우도 많고, 심신적인 이유로 집중이 안되는 날도 있고..
+이런 날이 다들 더 많을겁니다. 이런 문제를 월 만원정도로 해결할 수 있다면, 당신은 비용을 지불 할것인가??
+저는 이 비용을 내고, 이 문제를 해결한거 같습니다. ㅎㅎ
+이 해결 방법은 github의 copilot 이라는 AI 입니다.
+이제부터 copilot(코파일럿)에 대해 더 자세히 알아 보도록 하겠습니다.</description>
+    </item>
+    
     <item>
       <title>옵시디언, 노션을 대체 할 수 있을까?</title>
       <link>https://devkan.github.io/post/devdiary/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8-%EB%85%B8%EC%85%98%EC%9D%84-%EB%8C%80%EC%B2%B4-%ED%95%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C/</link>
