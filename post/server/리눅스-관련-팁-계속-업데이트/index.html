@@ -37,7 +37,7 @@ awk &lsquo;{print $1}&rsquo;: 필터링된 라인들에서 첫 번째 필드, �
 sort -u: 추출된 IP 주소들을 중복 없이 정렬
 wc -l: 정렬된 IP 주소들의 개수를 세어 출력"><meta itemprop="datePublished" content="2023-09-14T04:32:38+00:00" />
 <meta itemprop="dateModified" content="2023-09-14T04:32:38+00:00" />
-<meta itemprop="wordCount" content="221">
+<meta itemprop="wordCount" content="336">
 <meta itemprop="keywords" content="linux,tip," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -172,6 +172,7 @@ if (!doNotTrack) {
       <ul>
         <li><a href="#-로그파일에서-특정문자로-카운트시키기">🏷 로그파일에서 특정문자로 카운트시키기</a></li>
         <li><a href="#-특정-단어가-포함된-파일-찾을때">🏷 특정 단어가 포함된 파일 찾을때</a></li>
+        <li><a href="#mysql-루트-패스워드를-잃어-버렸을때">MySQL 루트 패스워드를 잃어 버렸을때</a></li>
       </ul>
     </li>
   </ul>
@@ -228,6 +229,31 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># httpd.conf에서 #(주석)으로 시작하는 라인을 제외하고 출력할때..</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 중간에 #을 사용하는 것은 못 잡고, #으로 시작하는 라인은 제거하고 출력합니다.</span>
 </span></span></code></pre></div><p> </p>
+<hr>
+<h3 id="mysql-루트-패스워드를-잃어-버렸을때">MySQL 루트 패스워드를 잃어 버렸을때</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; vi /etc/my.cnf
+</span></span><span style="display:flex;"><span>.....
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>mysqld<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>.....
+</span></span><span style="display:flex;"><span>skip-grant-tables <span style="color:#75715e"># 추가</span>
+</span></span></code></pre></div><p><code>mysql -u root -p -S /dev/null --skip-grant-tables</code> 이렇게 명령어 옵션으로도 가능하다가 된 글을 보았는데..<br>
+버전이 낮은 것에서만 되고, 5.7 이상부터는 안되는 것으로 알고 있습니다.</p>
+<p>그런데, gpt는 상위 버전에서도 된다고 하니.. 더 헤깔리네요.<br>
+하지만 안되는게 맞을 겁니다.
+ </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; systemctl restart mysqld
+</span></span><span style="display:flex;"><span>&gt; mysql -u root mysql <span style="color:#75715e"># 이처럼 패스워드 없이 접근이 가능합니다.</span>
+</span></span><span style="display:flex;"><span>Welcome to the MySQL monitor.  Commands end with ; or <span style="color:#ae81ff">\g</span>.
+</span></span><span style="display:flex;"><span>Your MySQL connection id is <span style="color:#ae81ff">187844</span>
+</span></span><span style="display:flex;"><span>Server version: 5.7.24 MySQL Community Server <span style="color:#f92672">(</span>GPL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>.....
+</span></span><span style="display:flex;"><span>mysql&gt; update user set authentication_string<span style="color:#f92672">=</span>PASSWORD<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;새로운 패스워드&#39;</span><span style="color:#f92672">)</span> where user<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;root&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 또는 mysql&gt; update user set password=PASSWORD(&#39;새로운 패스워드&#39;) where user=&#39;root&#39;;</span>
+</span></span><span style="display:flex;"><span>mysql&gt; flush privileges;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&gt; systemctl restart mysqld
+</span></span></code></pre></div><p> <br>
+ </p>
 
 		</div>
 		<footer class="post__footer">
