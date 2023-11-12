@@ -51,10 +51,10 @@
     
     <item>
       <title>Github Pages로 블로그 만들기 2편 -설치하기</title>
-      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>https://devkan.github.io/post/devdiary/github_page_blog_2/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://devkan.github.io/post/devdiary/github_page_blog_2/</guid>
       <description>현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
 Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
 1. PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.

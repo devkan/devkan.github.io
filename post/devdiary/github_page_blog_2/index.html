@@ -4,29 +4,43 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Github_page_blog_2 - Senior Developer&#39;s Blog</title>
+	<title>Github Pages로 블로그 만들기 2편 -설치하기 - Senior Developer&#39;s Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
 
 	<meta name="naver-site-verification" content="0d891ca580b2d5c47b2f83baba8a02a404bfa20c" />
 	<meta name="description" content="">
-		<meta property="og:title" content="Github_page_blog_2" />
-<meta property="og:description" content="github page blog 222" />
+		<meta property="og:title" content="Github Pages로 블로그 만들기 2편 -설치하기" />
+<meta property="og:description" content="현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
+1. PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
+&gt; Get-ExecutionPolicy Bypass Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.
+&gt; Set-ExecutionPolicy Bypass -Scope Process &gt; Get-ExecutionPolicy Bypass 그리고 &gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
+2. Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://devkan.github.io/post/devdiary/github_page_blog_2/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-09-06T18:34:50+09:00" />
-<meta property="article:modified_time" content="2023-09-06T18:34:50+09:00" />
+<meta property="article:published_time" content="2023-09-06T09:34:50+00:00" />
+<meta property="article:modified_time" content="2023-09-06T09:34:50+00:00" />
 
-		<meta itemprop="name" content="Github_page_blog_2">
-<meta itemprop="description" content="github page blog 222"><meta itemprop="datePublished" content="2023-09-06T18:34:50+09:00" />
-<meta itemprop="dateModified" content="2023-09-06T18:34:50+09:00" />
-<meta itemprop="wordCount" content="4">
-<meta itemprop="keywords" content="" />
+		<meta itemprop="name" content="Github Pages로 블로그 만들기 2편 -설치하기">
+<meta itemprop="description" content="현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
+1. PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
+&gt; Get-ExecutionPolicy Bypass Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.
+&gt; Set-ExecutionPolicy Bypass -Scope Process &gt; Get-ExecutionPolicy Bypass 그리고 &gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
+2. Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다."><meta itemprop="datePublished" content="2023-09-06T09:34:50+00:00" />
+<meta itemprop="dateModified" content="2023-09-06T09:34:50+00:00" />
+<meta itemprop="wordCount" content="277">
+<meta itemprop="keywords" content="GitHub,GitHub Pages,Hugo,SSG,Blog,PowerShell,Chocolatey," />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;500;600;700&display=swap">
+		
 
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -74,28 +88,28 @@ if (!doNotTrack) {
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/web">
+			<a class="menu__link" href="/post/web/">
 				<i class="fas fa-globe"></i>
 				<span class="menu__text">Web Programming</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/app">
+			<a class="menu__link" href="/post/app/">
 				<i class="fab fa-app-store-ios"></i>
 				<span class="menu__text">App Programming</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/server">
+			<a class="menu__link" href="/post/server/">
 				<i class="fas fa-server"></i>
 				<span class="menu__text">Server</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/mac">
+			<a class="menu__link" href="/post/mac/">
 				<i class="fab fa-apple"></i>
 				<span class="menu__text">Mac</span>
 				
@@ -109,7 +123,7 @@ if (!doNotTrack) {
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/travel">
+			<a class="menu__link" href="/post/travel/">
 				<i class="fas fa-suitcase-rolling"></i>
 				<span class="menu__text">Travel</span>
 				
@@ -133,17 +147,120 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Github_page_blog_2</h1>
+			<h1 class="post__title">Github Pages로 블로그 만들기 2편 -설치하기</h1>
 			<div class="post__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">DevKan</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-06T18:34:50&#43;09:00">2023-09-06</time></div></div>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-09-06T09:34:50Z">2023-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/github/" rel="category">GitHub</a>, <a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
 		</header>
-		<div class="content post__content clearfix">
-			<p>github page blog 222</p>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-powershell-권한-확인">1. PowerShell 권한 확인</a></li>
+        <li><a href="#2-chocolatey-설치">2. Chocolatey 설치</a></li>
+        <li><a href="#3-hugo-설치">3. Hugo 설치</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.<br>
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.<br>
+ </p>
+<h3 id="1-powershell-권한-확인">1. PowerShell 권한 확인</h3>
+<p>관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; Get-ExecutionPolicy
+</span></span><span style="display:flex;"><span>Bypass
+</span></span></code></pre></div><p>Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; Set-ExecutionPolicy Bypass -Scope Process
+</span></span><span style="display:flex;"><span>&gt; Get-ExecutionPolicy
+</span></span><span style="display:flex;"><span>Bypass
+</span></span></code></pre></div><p>그리고 <code>&gt; Get-ExecutionPolicy</code> 로 Bypass로 나오는지 확인하면 된다.<br>
+ </p>
+<h3 id="2-chocolatey-설치">2. Chocolatey 설치</h3>
+<p>hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다.<br>
+직접 hugo를 설치하는 있기는 한데, go랑 git등을 설치해 줘야 한다고 합니다.<br>
+(전 git이랑 choco가 이리 깔려있어서, 이 방법으로 합니다.)</p>
+<pre tabindex="0"><code>PowerShell v2+ 이상, .NET Framework 4.8이 설치되어 있어야 합니다.
+</code></pre><p><a href="https://chocolatey.org/install#individual">https://chocolatey.org/install#individual</a> 으로 들어가면 설치 방법이 나와 있습니다.
+powershell에서 아래 명령어를 입력하면 설치가 됩니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; Set-ExecutionPolicy Bypass -Scope Process -Force; <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol -bor 3072; iex <span style="color:#f92672">((</span>New-Object System.Net.WebClient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
+</span></span></code></pre></div><p><img src="/img/devdiary/087.png" alt="Github pages"></p>
+<p>이 페이지를 참조하면 됩니다.<br>
+ </p>
+<h3 id="3-hugo-설치">3. Hugo 설치</h3>
+<p>choco 설치후 path를 등록은 해 주어야 하는지, 안해도 등록이 시켜주는지를 모르겠네요.. ^^;<br>
+(이전에 설치된 상태라서요.. choco를 인식 못하면 시스템 관리에서 path를 등록해 주세요.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; choco install hugo-extended -confirm
+</span></span><span style="display:flex;"><span>Chocolatey v2.1.0
+</span></span><span style="display:flex;"><span>Installing the following packages:
+</span></span><span style="display:flex;"><span>hugo-extended
+</span></span><span style="display:flex;"><span>By installing, you accept licenses <span style="color:#66d9ef">for</span> the packages.
+</span></span><span style="display:flex;"><span>Progress: Downloading hugo-extended 0.118.2... 100%
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hugo-extended v0.118.2 <span style="color:#f92672">[</span>Approved<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>hugo-extended package files install completed. Performing other installation steps.
+</span></span><span style="display:flex;"><span>Extracting 64-bit C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\h</span>ugo-extended<span style="color:#ae81ff">\t</span>ools<span style="color:#ae81ff">\h</span>ugo_extended_0.118.2_windows-amd64.zip to C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\h</span>ugo-extended<span style="color:#ae81ff">\t</span>ools...
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\h</span>ugo-extended<span style="color:#ae81ff">\t</span>ools
+</span></span><span style="display:flex;"><span> ShimGen has successfully created a shim <span style="color:#66d9ef">for</span> hugo.exe
+</span></span><span style="display:flex;"><span> The install of hugo-extended was successful.
+</span></span><span style="display:flex;"><span>  Software installed to <span style="color:#e6db74">&#39;C:\ProgramData\chocolatey\lib\hugo-extended\tools&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Chocolatey installed 1/1 packages.
+</span></span><span style="display:flex;"><span> See the log <span style="color:#66d9ef">for</span> details <span style="color:#f92672">(</span>C:<span style="color:#ae81ff">\P</span>rogramData<span style="color:#ae81ff">\c</span>hocolatey<span style="color:#ae81ff">\l</span>ogs<span style="color:#ae81ff">\c</span>hocolatey.log<span style="color:#f92672">)</span>.
+</span></span></code></pre></div><p> </p>
+<p>hugo가 제대로 설치 되었는지 확인해 보면..</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt; hugo version
+</span></span><span style="display:flex;"><span>hugo v0.118.2-da7983ac4b94d97d776d7c2405040de97e95c03d+extended windows/amd64 BuildDate<span style="color:#f92672">=</span>2023-08-31T11:23:51Z VendorInfo<span style="color:#f92672">=</span>gohugoio
+</span></span></code></pre></div><p>직접 설치를 할 경우 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 에서 windows용으로 설치를 하면 됩니다. (go, git을 설치해야 하는것으로 알고 있습니다.)<br>
+ </p>
+<p><strong>참고 문서:</strong></p>
+<ul>
+<li><a href="https://chocolatey.org/">Chocolatey 공식 웹사이트</a></li>
+<li><a href="https://gohugo.io/">Hugo 공식 웹사이트</a></li>
+<li><a href="https://pages.github.com/">GitHub Pages 공식 문서</a></li>
+</ul>
+<p> </p>
 
 		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/github/" rel="tag">GitHub</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/github-pages/" rel="tag">GitHub Pages</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ssg/" rel="tag">SSG</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/blog/" rel="tag">Blog</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/powershell/" rel="tag">PowerShell</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/chocolatey/" rel="tag">Chocolatey</a>
+		</li>
+	</ul>
+</div>
+		</footer>
 	</article>
 </main>
 
@@ -164,9 +281,15 @@ if (!doNotTrack) {
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-i/" rel="prev">
+		<a class="pager__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8-%EC%86%8C%EA%B0%9C%ED%95%98%EA%B8%B0/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Github Pages로 블로그 만들기 I</p>
+			<p class="pager__title">Github Pages로 블로그 만들기 1편 -소개하기</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Github Pages로 블로그 만들기 3편 -설정하기</p>
 		</a>
 	</div>
 </nav>
@@ -195,9 +318,11 @@ if (!doNotTrack) {
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github_page_blog_2/">Github_page_blog_2</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-i/">Github Pages로 블로그 만들기 I</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/profile/">about Me</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/devdiary/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B6%80%EC%82%AC%EC%88%98-github%EC%9D%98-copilot/">개발자를 위한 부사수 Github의 Copilot</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/devdiary/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8-%EB%85%B8%EC%85%98%EC%9D%84-%EB%8C%80%EC%B2%B4-%ED%95%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C/">옵시디언, 노션을 대체 할 수 있을까?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/server/%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B4%80%EB%A0%A8-%ED%8C%81-%EA%B3%84%EC%86%8D-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/">리눅스 관련 팁 (계속 업데이트)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Github Pages로 블로그 만들기 3편 -설정하기</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/devdiary/github_page_blog_2/">Github Pages로 블로그 만들기 2편 -설치하기</a></li>
 		</ul>
 	</div>
 </div>
@@ -206,7 +331,31 @@ if (!doNotTrack) {
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/copilot/">copilot</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/github/">GitHub</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/hugo/">Hugo</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux/">linux</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/obsidian/">obsidian</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/tip/">Tip</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%EC%97%AC%ED%96%89/">여행</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">1</span>
 				</li>
 		</ul>
@@ -215,13 +364,23 @@ if (!doNotTrack) {
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="Blog">Blog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="Blog">Blog (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/chocolatey/" title="Chocolatey">Chocolatey (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/copilot/" title="copilot">copilot (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devkan/" title="DevKan">DevKan (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="GitHub">GitHub (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/github-pages/" title="GitHub Pages">GitHub Pages (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/github-pages/" title="GitHub Pages">GitHub Pages (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo-theme/" title="Hugo Theme">Hugo Theme (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="linux">linux (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/markdown/" title="Markdown">Markdown (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ssg/" title="SSG">SSG (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/notion/" title="notion">notion (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/obsidian/" title="obsidian">obsidian (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/powershell/" title="PowerShell">PowerShell (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ssg/" title="SSG">SSG (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tip/" title="tip">tip (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%97%AC%ED%96%89/" title="여행">여행 (1)</a>
 	</div>
 </div>
 <div class="widget-social widget">
@@ -242,6 +401,17 @@ if (!doNotTrack) {
 
 		
 	</div>
+</div><div class="widget-visitor widget">
+
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'G-2F9MRN5D89', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
 </div>
 </aside>
 		</div>
