@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 08 Sep 2023 08:21:44 +0000</lastBuildDate><atom:link href="https://devkan.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github Pages로 블로그 만들기 3편 -설정하기</title>
-      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_3/</link>
       <pubDate>Fri, 08 Sep 2023 08:21:44 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_3/</guid>
       <description>이제 hugo에서 사이트를 생성해 보자.
 1. Github에 Repository 생성하기 우선 github에 두개의 repository를 생성해야 합니다.
 하나는 hugo에 의해 렌더링 되기 전의 소스를 저장하는 repository(여기서는 gitblog)이고,
@@ -23,10 +23,10 @@
     
     <item>
       <title>Github Pages로 블로그 만들기 2편 -설치하기</title>
-      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_2/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2%ED%8E%B8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_2/</guid>
       <description>현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
 Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
 1. PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
@@ -37,10 +37,10 @@ Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통�
     
     <item>
       <title>Github Pages로 블로그 만들기 1편 -소개하기</title>
-      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8-%EC%86%8C%EA%B0%9C%ED%95%98%EA%B8%B0/</link>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_1/</link>
       <pubDate>Wed, 06 Sep 2023 09:34:38 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1%ED%8E%B8-%EC%86%8C%EA%B0%9C%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_1/</guid>
       <description>github pages라는 것이 github에 있습니다.
 처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
 html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..

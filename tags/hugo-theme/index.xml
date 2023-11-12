@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 08 Sep 2023 08:21:44 +0000</lastBuildDate><atom:link href="https://devkan.github.io/tags/hugo-theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github Pages로 블로그 만들기 3편 -설정하기</title>
-      <link>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_3/</link>
       <pubDate>Fri, 08 Sep 2023 08:21:44 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/devdiary/github-pages%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-3%ED%8E%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_3/</guid>
       <description>이제 hugo에서 사이트를 생성해 보자.
 1. Github에 Repository 생성하기 우선 github에 두개의 repository를 생성해야 합니다.
 하나는 hugo에 의해 렌더링 되기 전의 소스를 저장하는 repository(여기서는 gitblog)이고,

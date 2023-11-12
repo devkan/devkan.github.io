@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App on Senior Developer&#39;s Blog</title>
+    <link>https://devkan.github.io/app/</link>
+    <description>Recent content in App on Senior Developer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 14 Sep 2023 13:23:00 +0900</lastBuildDate><atom:link href="https://devkan.github.io/app/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 14 Sep 2023 04:32:38 +0000</lastBuildDate><atom:link href="https://devkan.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>리눅스 관련 팁 (계속 업데이트)</title>
-      <link>https://devkan.github.io/post/server/%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B4%80%EB%A0%A8-%ED%8C%81-%EA%B3%84%EC%86%8D-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
+      <link>https://devkan.github.io/server/linux_tips/</link>
       <pubDate>Thu, 14 Sep 2023 04:32:38 +0000</pubDate>
       
-      <guid>https://devkan.github.io/post/server/%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B4%80%EB%A0%A8-%ED%8C%81-%EA%B3%84%EC%86%8D-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
+      <guid>https://devkan.github.io/server/linux_tips/</guid>
       <description>🏷 로그파일에서 특정문자로 카운트시키기 아파치 로그에서 바로 아이별로 카운트 시킬때 사용하는 명령어입니다.
 자주는 아닌데, 갑자기 트래픽 치고 올라오면 사용합니다.
 로그파일은 이와 같은 형식으로 기록된다고 할때입니다.

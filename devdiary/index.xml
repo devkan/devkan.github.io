@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>개발 일지 on Senior Developer&#39;s Blog</title>
+    <link>https://devkan.github.io/devdiary/</link>
+    <description>Recent content in 개발 일지 on Senior Developer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 01 Sep 2023 18:47:33 +0900</lastBuildDate><atom:link href="https://devkan.github.io/devdiary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개발자를 위한 부사수 Github의 Copilot</title>
+      <link>https://devkan.github.io/devdiary/github_copilot/</link>
+      <pubDate>Sat, 30 Sep 2023 10:50:27 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/devdiary/github_copilot/</guid>
+      <description>앉아서 에디터 창에 코딩을 하다보면 집중이 잘 되어서 코딩이 막힘없이 되는 날이 있을겁니다.
+하지만 그런 날은 많지가 않죠..
+전화나 회의등으로 맥이 끊어지는 경우도 많고, 심신적인 이유로 집중이 안되는 날도 있고..
+이런 날이 다들 더 많을겁니다. 이런 문제를 월 만원정도로 해결할 수 있다면, 당신은 비용을 지불 할것인가??
+저는 이 비용을 내고, 이 문제를 해결한거 같습니다. ㅎㅎ
+이 해결 방법은 github의 copilot 이라는 AI 입니다.
+이제부터 copilot(코파일럿)에 대해 더 자세히 알아 보도록 하겠습니다.</description>
+    </item>
+    
+    <item>
+      <title>옵시디언, 노션을 대체 할 수 있을까?</title>
+      <link>https://devkan.github.io/devdiary/obsidian/</link>
+      <pubDate>Thu, 21 Sep 2023 06:25:02 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/devdiary/obsidian/</guid>
+      <description>이번 글은 옵시디언에서 text generator를 이용해 openAI의 GPT-3를 사용해 작성을 해 본 글이며,
+개인 생각이나 수정을 한 것이니 참고해 주세요.
+차후 이 연동에 대한 것들 한번 적어 보도록 하겠습니다.
+옵시디언이란? 옵시디언(Obsidian)은 최근에 많은 이들 사이에서 인기를 얻고 있는 개인 지식 관리 도구입니다. 이 툴은 마크다운(Markdown) 형식으로 노트를 작성하고, 노트 간의 연결을 통해 사용자의 아이디어와 정보를 구조화할 수 있습니다.
+옵시디언은 다른 지식 관리 도구와 비교해 보았을 때, 특히 그래프 기반의 데이터 모델을 사용한다는 점에서 차별화됩니다.</description>
+    </item>
+    
+    <item>
+      <title>Github Pages로 블로그 만들기 3편 -설정하기</title>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_3/</link>
+      <pubDate>Fri, 08 Sep 2023 08:21:44 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_3/</guid>
+      <description>이제 hugo에서 사이트를 생성해 보자.
+1. Github에 Repository 생성하기 우선 github에 두개의 repository를 생성해야 합니다.
+하나는 hugo에 의해 렌더링 되기 전의 소스를 저장하는 repository(여기서는 gitblog)이고,
+이건 private으로 생성하셔야 합니다.
+하나는 hugo에 의해 렌더링 된 후의 결과물을 저장하는 repository(여기서는 devkan.github.io)입니다.
+다시 정리하면, vscode에서 컨텐츠를 생성하고, 이것을 hugo로 렌더링을 합니다. 그럼 hugo에서 테마나 템플릿을 이용해서 각각의 페이지를 만들어 냅니다. (즉, 헤더/풋터/메뉴등을 알아서 붙여주고.. 필요한 카테고리/태그등도 만들고, 페이징도 별도 구성도 하고 합니다.) 그리 만들어진 결과물을 원본소스는 gitblog로 push하고, 렌더링된 컨텐츠는 devkan.</description>
+    </item>
+    
+    <item>
+      <title>Github Pages로 블로그 만들기 2편 -설치하기</title>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_2/</link>
+      <pubDate>Wed, 06 Sep 2023 09:34:50 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_2/</guid>
+      <description>현재 윈도우를 사용하고 있기 때문에, 윈도우용으로 설치 및 설정을 하겠습니다.
+Mac에서는 brew를 통해서 설치하면 되고, 리눅스는 apt-get을 통해서 설치하면 됩니다.
+1. PowerShell 권한 확인 관리자 권한으로 powershell을 실행해 줘야 권한 변경이 가능하니, 꼭 관리자 권한으로 실행해 줘야 합니다.
+&amp;gt; Get-ExecutionPolicy Bypass Restricted가 아닌지 확인을 해야 한다. 만일 Restricted라면 다음과 같이 변경해 줘야 한다.
+&amp;gt; Set-ExecutionPolicy Bypass -Scope Process &amp;gt; Get-ExecutionPolicy Bypass 그리고 &amp;gt; Get-ExecutionPolicy 로 Bypass로 나오는지 확인하면 된다.
+2. Chocolatey 설치 hugo를 설치하기 위해서는 Chocolatey를 먼저 설치해야 합니다.</description>
+    </item>
+    
+    <item>
+      <title>Github Pages로 블로그 만들기 1편 -소개하기</title>
+      <link>https://devkan.github.io/devdiary/hugo_github_pages_1/</link>
+      <pubDate>Wed, 06 Sep 2023 09:34:38 +0000</pubDate>
+      
+      <guid>https://devkan.github.io/devdiary/hugo_github_pages_1/</guid>
+      <description>github pages라는 것이 github에 있습니다.
+처음에는 그냥 html 페이지 만드는 곳이라 생각했는데, 이걸로 블로그까지 만들고 해서 처음에는 무작성 repository를 만들고,
+html파일 몇개 만들다.. 뭐야! 게시판도 없고, 댓글도 없고..
+이런 걸로 무슨 블로그야 하면서.. 그냥 접었습니다.
+보다 자세한 것은 github pages 를 참조하시면 됩니다.
+하지만, 얼마 지나지 않아서 저의 생각이 잘못 되었다는 것을 알게 되었습니다.
+이것을 알기위해서는 static site가 뭔지 알아야 합니다.
+1. Static Site 쉽게 말해서 html, js, css로 구성된 정적 사이트입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
