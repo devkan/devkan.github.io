@@ -221,19 +221,13 @@ h4 {
 }
 
 h5 {
-	display: flex;
 	font-size: 18px;
 	font-size: 1.25rem;
-	color: #428ad6;
+	color: #33cc00;
 }
 
 h5::before {
-  content: "";
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url(/img/arrow_1.png);
-  margin-right: 10px;
+  content: "🏷 ";
 }
 
 h6 {
