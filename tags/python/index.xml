@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Senior Developer&#39;s Blog</title>
+    <link>https://devkan.github.io/tags/python/</link>
+    <description>Recent content in Python on Senior Developer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 15 Nov 2023 16:35:41 +0900</lastBuildDate><atom:link href="https://devkan.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>파이썬 기본 문법 및 구조</title>
+      <link>https://devkan.github.io/app/python_basic/</link>
+      <pubDate>Wed, 15 Nov 2023 16:35:41 +0900</pubDate>
+      
+      <guid>https://devkan.github.io/app/python_basic/</guid>
+      <description>아래 내용은 파이썬의 기본문법 및 구조를 간단 요약한 내용입니다.
+여러 언어를 접하면서 헤깔릴때가 있어서 기록해 둔 내용입니다.
+들여쓰기 파이썬은 코드 블록을 정의하기 위해 들여쓰기를 사용합니다.
+이는 코드를 매우 읽기 쉽게 만들지만, 일관된 간격을 유지해야 한다는 의미이기도 합니다.
+일반적으로 각 들여쓰기 레벨에 4개의 공백을 사용합니다.
+def function(): # 코드 블록 if condition: # 하위 블록 # 메인 블록으로 돌아감 변수와 데이터 타입 파이썬은 동적 타이핑을 지원하므로 변수를 사용하기 전에 선언하거나 타입을 지정할 필요가 없습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
